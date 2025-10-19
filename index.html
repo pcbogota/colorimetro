@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!DOCTYPE html>
+	<html lang="es">
+		<head>
+			<meta charset="UTF-8" />
+			<title>Color Panel Comparator</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<link rel="stylesheet" href="style.css" />
+		</head>
+		<body>
+			<header>
+				<img
+					src="https://raw.githubusercontent.com/pcbogota/logistic-data/refs/heads/main/Imagenes/logo-pcbogota-dark-bg.svg"
+					alt="logo-pcbogota"
+					id="logo-pcbogota"
+				/>
+				<h1>Comparador de Color para Evaluación de Panel</h1>
+			</header>
+
+			<div class="color-panels">
+				<div class="color-box" id="refBox">
+					<h3 class="color-title">Color de referencia</h3>
+					<div class="color-display" id="refColor"></div>
+					<div class="color-values" id="referenceValues">
+						<div><span>RGB:</span> (255, 255, 255)</div>
+						<div><span>CMYK:</span> (0, 0, 0, 0)</div>
+						<div><span>HEX:</span> #FFFFFF</div>
+					</div>
+					<div id="sliders-Reference" class="sliders">
+						<div class="slider-group">
+							<label for="Reference_rRange"
+								><span>R:</span>
+								<input type="range" id="Reference_rRange" min="0" max="255" value="255" />
+								<input type="number" id="Reference_rValue" min="0" max="255" value="255" />
+							</label>
+						</div>
+						<div class="slider-group">
+							<label for="Reference_gRange"
+								><span>G:</span>
+								<input type="range" id="Reference_gRange" min="0" max="255" value="255" />
+								<input type="number" id="Reference_gValue" min="0" max="255" value="255" />
+							</label>
+						</div>
+						<div class="slider-group">
+							<label for="Reference_bRange"
+								><span>B:</span>
+								<input type="range" id="Reference_bRange" min="0" max="255" value="255" />
+								<input type="number" id="Reference_bValue" min="0" max="255" value="255" />
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="color-box" id="sampleBox">
+					<h3 class="color-title">Color de muestra</h3>
+					<div class="color-display" id="sampleColor">
+						<div class="preset-container">
+							<h5>Paleta</h5>
+							<div class="preset" data-color="#FF0000" title="Rojo"><span>Rojo</span></div>
+							<div class="preset" data-color="#00FF00" title="Verde"><span>Verde</span></div>
+							<div class="preset" data-color="#0000FF" title="Azul"><span class="light">Azul</span></div>
+							<div class="preset" data-color="#00FFFF" title="Cian"><span>Cian</span></div>
+							<div class="preset" data-color="#FF00FF" title="Magenta"><span>Magenta</span></div>
+							<div class="preset" data-color="#FFFF00" title="Amarillo"><span>Amarillo</span></div>
+							<div class="preset" data-color="#000000" title="Negro"><span class="light">Negro</span></div>
+							<div class="preset custom" id="customColor" title="Personalizado"></div>
+							<input type="color" id="colorPicker" hidden />
+						</div>
+					</div>
+
+					<div class="color-values" id="sampleValues"></div>
+					<div id="sliders-Sample" class="sliders">
+						<div class="slider-group">
+							<label for="Sample_rRange"
+								><span>R:</span>
+								<input type="range" id="Sample_rRange" min="0" max="255" value="255" />
+								<input type="number" id="Sample_rValue" min="0" max="255" value="255" />
+							</label>
+						</div>
+						<div class="slider-group">
+							<label for="Sample_gRange"
+								><span>G:</span>
+								<input type="range" id="Sample_gRange" min="0" max="255" value="0" />
+								<input type="number" id="Sample_gValue" min="0" max="255" value="0" />
+							</label>
+						</div>
+						<div class="slider-group">
+							<label for="Sample_bRange"
+								><span>B:</span>
+
+								<input type="range" id="Sample_bRange" min="0" max="255" value="0" />
+								<input type="number" id="Sample_bValue" min="0" max="255" value="0" />
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script src="script.js"></script>
+		</body>
+	</html>
+</html>

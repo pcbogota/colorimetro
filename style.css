@@ -1,0 +1,175 @@
+:root {
+	--separator: 0.25em;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #282828;
+	color: #111;
+	font-family: sans-serif;
+	padding: 0.7em;
+	width: 100%;
+}
+
+h1,
+h2,
+h3 {
+	margin-bottom: var(--separator);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 0;
+}
+header img {
+	order: 2;
+	max-height: 2em;
+}
+
+header h1 {
+	order: 1;
+	text-align: center;
+	color: #dedede;
+}
+
+input[type="range"] {
+	width: 18em;
+}
+
+input[type="number"] {
+	width: 4em;
+	padding: 0.35em;
+	margin-left: 0.5em;
+}
+
+.color-panels {
+	display: flex;
+	gap: 0.5em;
+	justify-content: center;
+}
+
+.color-box {
+	background-color: #808080;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	height: 90dvh;
+	padding: 10px;
+	width: 50%;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+.color-title {
+	font-weight: bold;
+	margin-bottom: var(--separator);
+}
+
+.color-display {
+	background-color: #ffffff;
+	border-radius: 0.5em 0.5em 0 0;
+	height: 100%;
+	width: 100%;
+}
+
+.color-values {
+	background-color: #fff;
+	border-radius: 0 0 0.5em 0.5em;
+	line-height: 1.4;
+	line-height: 2em;
+	padding: 1em;
+	width: 100%;
+	margin-bottom: 1em;
+}
+.color-values span {
+	display: inline-block;
+	font-weight: 600;
+	width: 4em;
+}
+
+.preset-container {
+	display: flex;
+	justify-content: center;
+	gap: 0.25em;
+	margin: 0.5em;
+	flex-direction: column;
+}
+
+.preset {
+	border-radius: 0.5em;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	height: 2.5em;
+	width: 3.5em;
+}
+
+.preset.active {
+	outline: 0.25em solid #fff;
+	box-shadow: 0 0 0.5em #000;
+}
+
+.sliders {
+	display: flex;
+	justify-content: center;
+	gap: 0.75em;
+	margin-top: var(--separator);
+	flex-direction: column;
+}
+.sliders label span {
+	width: 1.25em;
+	text-align: right;
+	display: inline-block;
+}
+
+.slider-group label {
+	display: flex;
+	align-items: center;
+}
+
+#customColor {
+	background: #ffffff;
+}
+
+#sampleBox {
+	flex-wrap: nowrap;
+}
+
+#sampleBox .color-display {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#sampleBox .color-title {
+	order: 1;
+}
+#sampleBox .preset-container {
+	order: 2;
+	text-align: center;
+}
+
+#sampleBox #sampleColor {
+	order: 3;
+}
+
+#sampleBox #sampleValues {
+	order: 4;
+}
+
+#sampleBox #sliders-Sample {
+	order: 5;
+}
+#sampleColor div.preset span {
+	font-size: 0.75em;
+	font-weight: 400;
+}
+#sampleColor div.preset span.light {
+	color: white;
+}

@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.acceptSuggestionOnEnter": "off",
+		"editor.bracketPairColorization.enabled": true,
+		"editor.cursorSmoothCaretAnimation": "on",
+		"editor.cursorWidth": 3,
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.detectIndentation": true,
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"editor.guides.bracketPairs": "active",
+		"editor.insertSpaces": false,
+		"editor.lineHeight": 17,
+		"editor.mouseWheelZoom": true,
+		"editor.renderControlCharacters": true,
+		"editor.renderWhitespace": "all",
+		"editor.tabSize": 4,
+		"editor.tabCompletion": "on",
+		"editor.wordWrap": "on",
+		"explorer.confirmDelete": false,
+		"explorer.confirmDragAndDrop": false,
+		"files.autoSave": "onFocusChange",
+		"files.insertFinalNewline": true,
+		"files.trimFinalNewlines": true,
+		"files.trimTrailingWhitespace": true,
+		"workbench.editor.highlightModifiedTabs": true,
+		"workbench.editor.showTabs": "multiple",
+		"workbench.editor.wrapTabs": false,
+		"workbench.iconTheme": "material-icon-theme",
+		"workbench.startupEditor": "none",
+
+		"prettier.printWidth": 140,
+		"prettier.useTabs": true,
+	}
+}
