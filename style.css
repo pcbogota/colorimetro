@@ -10,7 +10,7 @@ body {
 	background: #282828;
 	color: #111;
 	font-family: sans-serif;
-	padding: 0.7em;
+	padding: 0 0.7em;
 	width: 100%;
 }
 
@@ -21,10 +21,12 @@ h3 {
 }
 
 header {
-	display: flex;
+	max-width: 1024px;
+	margin: 0 auto;
 	justify-content: space-between;
+	display: flex;
 	align-items: center;
-	padding: 2em 0;
+	height: 4em;
 }
 header img {
 	order: 2;
@@ -35,6 +37,7 @@ header h1 {
 	order: 1;
 	text-align: center;
 	color: #dedede;
+	margin-bottom: 0;
 }
 
 input[type="range"] {
@@ -57,7 +60,9 @@ input[type="number"] {
 	background-color: #808080;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-	height: 90dvh;
+	height: calc(100dvh - 4em - 2em); /* 100% de alto - alto header - padding inferior*/
+	min-height: 39em;
+	max-height: 100%;
 	padding: 10px;
 	width: 50%;
 	display: flex;
@@ -77,21 +82,22 @@ input[type="number"] {
 	border-radius: 0.5em 0.5em 0 0;
 	height: 100%;
 	width: 100%;
+	min-height: 20em;
 }
 
 .color-values {
 	background-color: #fff;
 	border-radius: 0 0 0.5em 0.5em;
 	line-height: 1.4;
-	line-height: 2em;
+	line-height: 1.5em;
 	padding: 1em;
 	width: 100%;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 }
 .color-values span {
 	display: inline-block;
 	font-weight: 600;
-	width: 4em;
+	width: 3.5em;
 }
 
 .preset-container {
@@ -107,7 +113,7 @@ input[type="number"] {
 	border: 2px solid rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 	cursor: pointer;
-	height: 2.5em;
+	height: 2em;
 	width: 3.5em;
 }
 
